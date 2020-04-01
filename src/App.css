@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans,Helvetica Neue,Arial;
+}
+
+body, html {
+  background-color: silver;
+  height: auto;
+}
+
+#root {
+  background-color: rgb(23, 108, 108);
+  height: 99vh;
+  max-height: 100%;
+  width: 99%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 2px auto;
+}
+
+#mainContainer {
+  min-height: 85%;
+  max-height: auto;
+  display: grid;
+  align-content: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr 1fr);
+  grid-row-gap: 55px;
+  border-bottom: 3px solid black;
+  background-color: rgb(23, 108, 108);
+  padding: 5px;
+}
+
+#bottomContainer {
+  height: 15%;
+  background-color: rgb(17, 129, 129);
+}
+
+table {
+  border-spacing: 14px;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* table-layout:fixed; */
+}
+
+#tdName {
+  width: 130px;
+}
+
+input {
+  width: 4vw;
+}
+label {
+  margin-left: 10px;
+  margin-right: 4px;
+}
+
+button {
+  width: 3vw;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+form {
+  margin-top: 3px;
+}
+
+h3 {
+  text-align: center;
+  color: silver;
+  font-size: 1.3rem;
+  padding-bottom: 3px;
+}
+
+.movieDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 10px; */
+}
+.ratingTable {
+  text-align: center;
+  color: rgb(232, 232, 232);
+}
+.colorIt {
+  color: rgb(232, 232, 232);
+}
+
+.fab fa-facebook {
+  width: 100px;
+  height: 100px;
+}
+
+.bottomText {
+  font-family: 'fa5-proxima-nova,'"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadAsImage {
+  cursor: pointer;
+}
+
+.iconClassName {
+  margin-left: 8px;
+  cursor: pointer;
+}
+#emptyRowsText {
+  color: silver;
+  text-align: center;
+}
+
+/* NADOLE VTORA SMENA */
+@media (max-width: 1270px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,Helvetica Neue,Arial;
+  }
+  
+  body, html {
+    background-color: silver;
+    height: auto;
+  }
+  
+  #root {
+    background-color: rgb(23, 108, 108);
+    /* min-height: 99vh; */
+    height: auto;
+    width: 99%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 2px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #mainContainer {
+    min-height: 85%;
+    max-height: auto;
+    padding: 50px;
+    background-color: rgb(23, 108, 108);
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    grid-row-gap: 55px;
+  }
+  
+  #bottomContainer {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(17, 129, 129);
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  table {
+    border-spacing: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  input {
+    width: 60px;
+  }
+  label {
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+  
+  button {
+    width: 40px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin-left: 4px;
+  }
+  
+  form {
+    margin-top: 3px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: silver;
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+  }
+  
+  .movieDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .ratingTable {
+    text-align: center;
+    color: rgb(232, 232, 232);
+  }
+  .colorIt {
+    color: rgb(232, 232, 232);
+  }
+  
+  .fab fa-facebook {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bottomText {
+    font-family: 'fa5-proxima-nova,'"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .downloadAsImage {
+    font-family: 'fa5-proxima-nova,'"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .iconClassName {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
+
+
+/* NADOLE TRETA SMENA */
+@media (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,Helvetica Neue,Arial;
+    font-size: 14px;
+  }
+  
+  body, html {
+    background-color: silver;
+    height: auto;
+  }
+  
+  #root {
+    background-color: rgb(23, 108, 108);
+    height: auto;
+    width: 99%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 2px auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #mainContainer {
+    height: 85%;
+    display: grid;
+    padding-top: 20px;
+    /* padding-bottom: 200px; */
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    grid-row-gap: 55px;
+  }
+  
+  #bottomContainer {
+    height: 15%;
+    background-color: rgb(17, 129, 129);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  table {
+    border-spacing: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  input {
+    width: 55px;
+    height: 15px;
+  }
+  label {
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+  
+  button {
+    width: 40px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin-left: 4px;
+    height: 12px;
+    font-size: 11px;
+  }
+  
+  form {
+    margin-top: 3px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: silver;
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+  }
+  
+  .movieDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+  }
+  .ratingTable {
+    text-align: center;
+    color: rgb(232, 232, 232);
+  }
+  .colorIt {
+    color: rgb(232, 232, 232);
+  }
+  
+  .fab fa-facebook {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bottomText {
+    font-family: 'fa5-proxima-nova,'"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iconClassName {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
+
+
+/* NADOLE CETVRTA SMENA */
+@media (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,Helvetica Neue,Arial;
+    font-size: 14px;
+  }
+  
+  body, html {
+    background-color: silver;
+    height: auto;
+  }
+  
+  #root {
+    background-color: rgb(23, 108, 108);
+    height: auto;
+    width: 99%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 2px auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #mainContainer {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top: 1px solid black;
+  }
+  
+  #bottomContainer {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(17, 129, 129);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .bottomText {
+    height: 100%;
+  }
+  
+  table {
+    border-spacing: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  input {
+    width: 60px;
+    height: 15px;
+  }
+  label {
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+  
+  button {
+    width: 40px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin-left: 4px;
+    height: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  form {
+    margin-top: 3px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: silver;
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+  }
+  
+  .movieDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 23px;
+  }
+  .ratingTable {
+    text-align: center;
+    color: rgb(232, 232, 232);
+  }
+  .colorIt {
+    color: rgb(232, 232, 232);
+  }
+  
+  .fab fa-facebook {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bottomText {
+    font-family: 'fa5-proxima-nova,'"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iconClassName {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
